@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Product Showcase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+  <!-- Navbar: stacks on mobile, row on tablet+ -->
+  <header class="bg-indigo-700 text-white">
+    <nav class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 px-6 py-4">
+      <span class="text-2xl font-bold">ShopEase</span>
+      <ul class="flex gap-6 text-sm">
+        <li><a href="#" class="hover:text-indigo-200">Home</a></li>
+        <li><a href="#products" class="hover:text-indigo-200">Products</a></li>
+        <li><a href="#features" class="hover:text-indigo-200">Features</a></li>
+        <li><a href="#contact" class="hover:text-indigo-200">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero: column on mobile, row on desktop -->
+  <section class="bg-indigo-50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-6 py-14">
+      <div class="text-center md:text-left md:w-1/2">
+        <h1 class="text-4xl lg:text-5xl font-extrabold text-indigo-900">Introducing Our New Collection</h1>
+        <p class="mt-4 text-slate-600">Stylish, durable and made for everyday life. Enjoy a seamless shopping experience on any device.</p>
+        <button class="mt-6 px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 active:scale-95 transition">Shop Now</button>
+      </div>
+      <div class="md:w-1/2 w-full h-56 md:h-64 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-7xl shadow-lg">🛍️</div>
+    </div>
+  </section>
+
+  <!-- Products: 1 / 2 / 4 columns using flex-wrap -->
+  <section id="products" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center">Featured Products</h2>
+    <div class="mt-8 flex flex-wrap gap-6">
+      <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex flex-col bg-white rounded-xl shadow hover:shadow-lg transition">
+        <div class="h-36 rounded-t-xl bg-amber-100 flex items-center justify-center text-5xl">⌚</div>
+        <div class="p-4 flex flex-col flex-1 justify-between gap-3">
+          <div><h3 class="font-semibold">Smart Watch</h3><p class="text-sm text-slate-500">Track fitness, calls and notifications.</p></div>
+          <div class="flex items-center justify-between"><span class="font-bold text-indigo-700">₹4,999</span>
+            <button class="px-3 py-1.5 text-sm rounded-md bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 transition">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex flex-col bg-white rounded-xl shadow hover:shadow-lg transition">
+        <div class="h-36 rounded-t-xl bg-teal-100 flex items-center justify-center text-5xl">🎧</div>
+        <div class="p-4 flex flex-col flex-1 justify-between gap-3">
+          <div><h3 class="font-semibold">Wireless Headphones</h3><p class="text-sm text-slate-500">Noise cancellation with 30 hours of battery.</p></div>
+          <div class="flex items-center justify-between"><span class="font-bold text-indigo-700">₹2,499</span>
+            <button class="px-3 py-1.5 text-sm rounded-md bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 transition">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex flex-col bg-white rounded-xl shadow hover:shadow-lg transition">
+        <div class="h-36 rounded-t-xl bg-sky-100 flex items-center justify-center text-5xl">🎒</div>
+        <div class="p-4 flex flex-col flex-1 justify-between gap-3">
+          <div><h3 class="font-semibold">Travel Backpack</h3><p class="text-sm text-slate-500">Water-resistant and comfortable for daily use.</p></div>
+          <div class="flex items-center justify-between"><span class="font-bold text-indigo-700">₹1,799</span>
+            <button class="px-3 py-1.5 text-sm rounded-md bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 transition">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex flex-col bg-white rounded-xl shadow hover:shadow-lg transition">
+        <div class="h-36 rounded-t-xl bg-rose-100 flex items-center justify-center text-5xl">👟</div>
+        <div class="p-4 flex flex-col flex-1 justify-between gap-3">
+          <div><h3 class="font-semibold">Running Sneakers</h3><p class="text-sm text-slate-500">Lightweight cushioning for all-day comfort.</p></div>
+          <div class="flex items-center justify-between"><span class="font-bold text-indigo-700">₹3,299</span>
+            <button class="px-3 py-1.5 text-sm rounded-md bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 transition">Add to Cart</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold text-center">Why Shop With Us</h2>
+      <div class="mt-8 flex flex-col md:flex-row gap-6">
+        <div class="flex-1 p-6 text-center rounded-xl bg-indigo-50"><div class="text-3xl">🚚</div><h3 class="mt-2 font-semibold">Free Delivery</h3><p class="text-sm text-slate-500">On all orders above ₹999.</p></div>
+        <div class="flex-1 p-6 text-center rounded-xl bg-indigo-50"><div class="text-3xl">🔒</div><h3 class="mt-2 font-semibold">Secure Payment</h3><p class="text-sm text-slate-500">100% safe and encrypted checkout.</p></div>
+        <div class="flex-1 p-6 text-center rounded-xl bg-indigo-50"><div class="text-3xl">↩️</div><h3 class="mt-2 font-semibold">Easy Returns</h3><p class="text-sm text-slate-500">7-day hassle-free return policy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-slate-900 text-slate-300 text-sm">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 px-6 py-8 text-center md:text-left">
+      <div><p class="font-bold text-white">ShopEase</p><p>Your one-stop online store.</p></div>
+      <p>Email: support@shopease.com | Phone: +91 98765 43210</p>
+      <p>&copy; 2026 ShopEase</p>
+    </div>
+  </footer>
+
+</body>
+</html>
